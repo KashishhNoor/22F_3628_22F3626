@@ -12,6 +12,15 @@ public class Library {
 	public void listBooks() {
 		System.out.println("Books in library: " + books);
 	}
+
+	public void removeBook(String bookName) {
+		if (books.remove(bookName)) {
+			System.out.println(bookName + " removed from library.");
+		} else {
+			System.out.println(bookName + " not found in library.");
+		}
+	}
+
 }
 
 public class Main {
